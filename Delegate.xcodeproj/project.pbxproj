@@ -16,6 +16,7 @@
 		1C81E11A26317A8B006D4B0A /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81E11926317A8B006D4B0A /* DoctorViewController.swift */; };
 		1C81E11E26317AAA006D4B0A /* ParamedicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81E11D26317AAA006D4B0A /* ParamedicViewController.swift */; };
 		1C81E12126317ABB006D4B0A /* SurgeonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81E12026317ABB006D4B0A /* SurgeonViewController.swift */; };
+		1C81E1252631C2CE006D4B0A /* CallCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81E1242631C2CE006D4B0A /* CallCenterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1C81E11926317A8B006D4B0A /* DoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
 		1C81E11D26317AAA006D4B0A /* ParamedicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamedicViewController.swift; sourceTree = "<group>"; };
 		1C81E12026317ABB006D4B0A /* SurgeonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeonViewController.swift; sourceTree = "<group>"; };
+		1C81E1242631C2CE006D4B0A /* CallCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallCenterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				1C81E11926317A8B006D4B0A /* DoctorViewController.swift */,
 				1C81E11D26317AAA006D4B0A /* ParamedicViewController.swift */,
 				1C81E12026317ABB006D4B0A /* SurgeonViewController.swift */,
+				1C81E1242631C2CE006D4B0A /* CallCenterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C81E106263177AB006D4B0A /* ViewController.swift in Sources */,
+				1C81E1252631C2CE006D4B0A /* CallCenterViewController.swift in Sources */,
 				1C81E102263177AB006D4B0A /* AppDelegate.swift in Sources */,
 				1C81E12126317ABB006D4B0A /* SurgeonViewController.swift in Sources */,
 				1C81E11E26317AAA006D4B0A /* ParamedicViewController.swift in Sources */,

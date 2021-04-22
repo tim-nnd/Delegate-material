@@ -9,21 +9,25 @@ import UIKit
 
 class SurgeonViewController: UIViewController {
 
+    @IBOutlet weak var timePicker: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func timePickerChanged(_ sender: UIDatePicker) {
+        
+        let date = timePicker.date
+        let time = Calendar.current.dateComponents([.hour], from: date)
+        let hour = time.hour!
+        
+        if hour >= 0 && hour <= 8 {
+            self.performSegue(withIdentifier: "surgeonToDoctor", sender: self)
+        }
+        else if hour >= 9 && hour <= 16 {
+            self.performSegue(withIdentifier: "surgeonToParamedic", sender: self)
+        }
     }
-    */
-
+        
+    // MARK: - add code here
 }
