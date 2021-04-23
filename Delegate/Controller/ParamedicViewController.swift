@@ -34,3 +34,11 @@ class ParamedicViewController: UIViewController {
         }
     }
 }
+
+extension ParamedicViewController: LifeSupportDelegate {
+    func doCPR() {
+        actionLabel.text = "melakukan CPR"
+    }
+    
+    
+}

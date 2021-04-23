@@ -34,3 +34,11 @@ class SurgeonViewController: UIViewController {
         }
     }
 }
+
+extension SurgeonViewController: LifeSupportDelegate {
+    func doCPR() {
+        labelAksi.text = "Melakukan CPR dan pertolongan pertama"
+    }
+    
+    
+}
