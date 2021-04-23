@@ -33,4 +33,10 @@ class ParamedicViewController: UIViewController {
             self.performSegue(withIdentifier: "paramedicToSurgeon", sender: self)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationVC = segue.destination as? CallCenterViewController {
+            // MARK: - Code Here
+        }
+    }
 }
