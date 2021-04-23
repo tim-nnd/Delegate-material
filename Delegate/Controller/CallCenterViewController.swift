@@ -11,6 +11,8 @@ class CallCenterViewController: UIViewController {
 
     @IBOutlet weak var delegateLabel: UILabel!
     
+    var delegate: LifeSupportDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,7 +20,7 @@ class CallCenterViewController: UIViewController {
     
     @IBAction func doCprPressed(_ sender: UIButton) {
         
-        // MARK: - Code Here
+        delegate?.doCPR()
         
         self.dismiss(animated: true, completion: nil)
     }

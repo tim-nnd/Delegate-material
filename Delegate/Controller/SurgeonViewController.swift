@@ -36,7 +36,15 @@ class SurgeonViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationVC = segue.destination as? CallCenterViewController {
-            // MARK: - Code Here
+            destinationVC.delegate = self
         }
     }
+}
+
+extension SurgeonViewController: LifeSupportDelegate {
+    func doCPR() {
+        labelAksi.text = "Melakukan CPR"
+    }
+    
+    
 }

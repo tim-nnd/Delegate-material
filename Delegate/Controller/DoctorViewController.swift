@@ -36,7 +36,15 @@ class DoctorViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationVC = segue.destination as? CallCenterViewController {
-            // MARK: - Code Here
+            destinationVC.delegate = self
         }
     }
+}
+
+extension DoctorViewController: LifeSupportDelegate {
+    func doCPR() {
+        actionLabel.text = "Doing CPR"
+    }
+    
+    
 }
