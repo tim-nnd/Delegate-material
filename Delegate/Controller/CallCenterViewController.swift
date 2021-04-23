@@ -14,8 +14,6 @@ class CallCenterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //coba set stringnya pake String(describing:)
-        delegateLabel.text = "Delegate: " + String(describing: CallCenterViewController.self) //nanti pake si class delegatenya
     }
     
     @IBAction func doCprPressed(_ sender: UIButton) {

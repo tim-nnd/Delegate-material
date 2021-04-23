@@ -10,9 +10,14 @@ import UIKit
 class ParamedicViewController: UIViewController {
 
     @IBOutlet weak var timePicker: UIDatePicker!
+    @IBOutlet weak var actionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        actionLabel.text = "Baru kelar makan"
     }
     
     @IBAction func timePickerChanged(_ sender: UIDatePicker) {
@@ -24,13 +29,8 @@ class ParamedicViewController: UIViewController {
         if hour >= 0 && hour <= 8 {
             self.performSegue(withIdentifier: "paramedicToDoctor", sender: self)
         }
-        else if hour >= 9 && hour <= 16 {
-            // pindah ke paramedicView
-        }
         else if hour >= 17 && hour <= 24 {
             self.performSegue(withIdentifier: "paramedicToSurgeon", sender: self)
         }
     }
-        
-    // MARK: - add code here
 }

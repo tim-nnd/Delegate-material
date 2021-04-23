@@ -39,11 +39,19 @@
                                     <segue destination="WRT-u8-pmw" kind="presentation" id="X3p-sc-IaE"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Action" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p94-B5-K14">
+                                <rect key="frame" x="20" y="474" width="374" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="actionLabel" destination="p94-B5-K14" id="XWJ-4J-uBL"/>
                         <outlet property="timePicker" destination="gPW-90-f4H" id="qaP-bZ-5vy"/>
                         <segue destination="5pv-cV-CR7" kind="presentation" identifier="doctorToParamedic" modalPresentationStyle="fullScreen" id="Idw-Ia-sIh"/>
                         <segue destination="hsp-st-7C4" kind="presentation" identifier="doctorToSurgeon" modalPresentationStyle="fullScreen" id="YV5-Nw-bHa"/>
@@ -84,12 +92,20 @@
                                     <segue destination="WRT-u8-pmw" kind="presentation" id="qTB-8R-nlG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Action" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mf8-gw-iBF">
+                                <rect key="frame" x="20" y="474" width="374" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mxw-6G-uzT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="WNm-Ro-C6t"/>
                     <connections>
+                        <outlet property="actionLabel" destination="mf8-gw-iBF" id="K20-KM-5Up"/>
                         <outlet property="timePicker" destination="4w0-kW-hbN" id="dOQ-cm-mHX"/>
                         <segue destination="hsp-st-7C4" kind="presentation" identifier="paramedicToSurgeon" modalPresentationStyle="fullScreen" id="wX2-o0-Vgw"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="paramedicToDoctor" modalPresentationStyle="fullScreen" id="YvC-Iy-TEn"/>
@@ -173,11 +189,19 @@
                                     <segue destination="WRT-u8-pmw" kind="presentation" id="0Zz-pV-MGA"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Action" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ird-la-f0M">
+                                <rect key="frame" x="20" y="474" width="374" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OmZ-wA-6qB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="labelAksi" destination="ird-la-f0M" id="V3W-n3-i7m"/>
                         <outlet property="timePicker" destination="0Xo-GX-7z6" id="uDG-Yq-eU1"/>
                         <segue destination="5pv-cV-CR7" kind="presentation" identifier="surgeonToParamedic" modalPresentationStyle="fullScreen" id="9TN-6Z-K8D"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="surgeonToDoctor" modalPresentationStyle="fullScreen" id="YIf-eu-Slx"/>
@@ -189,9 +213,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wX2-o0-Vgw"/>
-        <segue reference="0Zz-pV-MGA"/>
-        <segue reference="9TN-6Z-K8D"/>
+        <segue reference="YV5-Nw-bHa"/>
+        <segue reference="X3p-sc-IaE"/>
+        <segue reference="Idw-Ia-sIh"/>
         <segue reference="YIf-eu-Slx"/>
     </inferredMetricsTieBreakers>
     <resources>

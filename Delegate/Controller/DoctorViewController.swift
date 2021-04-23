@@ -10,9 +10,14 @@ import UIKit
 class DoctorViewController: UIViewController {
 
     @IBOutlet weak var timePicker: UIDatePicker!
+    @IBOutlet weak var actionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        actionLabel.text = "Habis break"
     }
     
     @IBAction func timePickerChanged(_ sender: UIDatePicker) {
@@ -28,6 +33,4 @@ class DoctorViewController: UIViewController {
             self.performSegue(withIdentifier: "doctorToSurgeon", sender: self)
         }
     }
-        
-    // MARK: - add code here
 }
